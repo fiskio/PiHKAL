@@ -1,1 +1,7 @@
 *.bak
+*.aux
+*.bcf
+*.log
+*.xml
+*.blg
+*.bbl
