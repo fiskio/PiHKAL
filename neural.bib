@@ -1,0 +1,76 @@
+% 2015-10-26T11:58:47+00:00
+% Encoding: UTF8
+
+@Article{1412.7753,
+  title = {Learning Longer Memory in Recurrent Neural Networks},
+  author = {Mikolov, Tomas and Joulin, Armand and Chopra, Sumit and Mathieu, Michael and Ranzato, {Marc'Aurelio}},
+  year = {2015},
+  eprint = {1412.7753v2},
+  month = apr,
+  url = {http://arxiv.org/abs/1412.7753v2},
+  file = {:papers/1412.7753.pdf:PDF},
+  added = {2015-10-26},
+  arxiv = {1412.7753v2},
+  arxivcategories = {cs.NE cs.LG},
+  primaryclass = {cs.NE},
+  journal = {ArXiv e-prints},
+  archiveprefix = {arXiv},
+  arxivcreated = {2014-12-24},
+  arxivupdated = {2015-04-16},
+  shortjournal = {arXiv},
+  abstract = {Recurrent neural network is a powerful model that learns temporal patterns in
+sequential data. For a long time, it was believed that recurrent networks are
+difficult to train using simple optimizers, such as stochastic gradient
+descent, due to the so-called vanishing gradient problem. In this paper, we
+show that learning longer term patterns in real data, such as in natural
+language, is perfectly possible using gradient descent. This is achieved by
+using a slight structural modification of the simple recurrent neural network
+architecture. We encourage some of the hidden units to change their state
+slowly by making part of the recurrent weight matrix close to identity, thus
+forming kind of a longer term memory. We evaluate our model in language
+modeling experiments, where we obtain similar performance to the much more
+complex Long Short Term Memory (LSTM) networks (Hochreiter & Schmidhuber,
+1997).}
+}
+
+@Article{1409.3215,
+  title = {Sequence to Sequence Learning with Neural Networks},
+  author = {Sutskever, Ilya and Vinyals, Oriol and Le, {Quoc V.}},
+  year = {2014},
+  eprint = {1409.3215v3},
+  month = dec,
+  url = {http://arxiv.org/abs/1409.3215v3},
+  added = {2015-10-26},
+  archiveprefix = {arXiv},
+  arxiv = {1409.3215v3},
+  arxivcategories = {cs.CL cs.LG},
+  arxivcreated = {2014-09-10},
+  arxivupdated = {2014-12-14},
+  comments = {9 pages},
+  file = {:papers/1409.3215.pdf:PDF},
+  journal = {ArXiv e-prints},
+  primaryclass = {cs.CL},
+  shortjournal = {arXiv},
+  abstract = {Deep Neural Networks (DNNs) are powerful models that have achieved excellent
+performance on difficult learning tasks. Although DNNs work well whenever large
+labeled training sets are available, they cannot be used to map sequences to
+sequences. In this paper, we present a general end-to-end approach to sequence
+learning that makes minimal assumptions on the sequence structure. Our method
+uses a multilayered Long Short-Term Memory (LSTM) to map the input sequence to
+a vector of a fixed dimensionality, and then another deep LSTM to decode the
+target sequence from the vector. Our main result is that on an English to
+French translation task from the WMT'14 dataset, the translations produced by
+the LSTM achieve a BLEU score of 34.8 on the entire test set, where the LSTM's
+BLEU score was penalized on out-of-vocabulary words. Additionally, the LSTM did
+not have difficulty on long sentences. For comparison, a phrase-based SMT
+system achieves a BLEU score of 33.3 on the same dataset. When we used the LSTM
+to rerank the 1000 hypotheses produced by the aforementioned SMT system, its
+BLEU score increases to 36.5, which is close to the previous best result on
+this task. The LSTM also learned sensible phrase and sentence representations
+that are sensitive to word order and are relatively invariant to the active and
+the passive voice. Finally, we found that reversing the order of the words in
+all source sentences (but not target sentences) improved the LSTM's performance
+markedly, because doing so introduced many short term dependencies between the
+source and the target sentence which made the optimization problem easier.}
+}
+
