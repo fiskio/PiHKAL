@@ -4,4 +4,4 @@ all:
 	pdflatex list.tex
 
 clean:
-	rm *aux *bcf *log *xml *blg
+	rm *aux *bcf *log *xml *blg *bbl
