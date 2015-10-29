@@ -1,4 +1,4 @@
-% 2015-10-26T11:58:47+00:00
+% 2015-10-29T14:55:36+00:00
 % Encoding: UTF8
 
 @Article{1412.7753,
@@ -72,5 +72,35 @@ the passive voice. Finally, we found that reversing the order of the words in
 all source sentences (but not target sentences) improved the LSTM's performance
 markedly, because doing so introduced many short term dependencies between the
 source and the target sentence which made the optimization problem easier.}
+}
+
+@ARTICLE{1508.05051,
+  file = {:papers/1508.05051.pdf:PDF},
+  arxiv = {1508.05051v1},
+  title = {Auto-Sizing Neural Networks: With Applications to n-gram Language Models},
+  arxivcategories = {cs.CL},
+  primaryclass = {cs.CL},
+  author = {Murray, Kenton and Chiang, David},
+  journal = {ArXiv e-prints},
+  eprint = {1508.05051v1},
+  archiveprefix = {arXiv},
+  arxivcreated = {2015-08-20},
+  year = {2015},
+  month = aug,
+  comments = {EMNLP 2015},
+  url = {http://arxiv.org/abs/1508.05051v1},
+  added = {2015-10-29},
+  shortjournal = {arXiv},
+  abstract = {Neural networks have been shown to improve performance across a range of
+natural-language tasks. However, designing and training them can be
+complicated. Frequently, researchers resort to repeated experimentation to pick
+optimal settings. In this paper, we address the issue of choosing the correct
+number of units in hidden layers. We introduce a method for automatically
+adjusting network size by pruning out hidden units through $\ell_{\infty,1}$
+and $\ell_{2,1}$ regularization. We apply this method to language modeling and
+demonstrate its ability to correctly choose the number of hidden units while
+maintaining perplexity. We also include these models in a machine translation
+decoder and show that these smaller neural models maintain the significant
+improvements of their unpruned versions.}
 }
 
