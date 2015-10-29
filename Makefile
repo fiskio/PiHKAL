@@ -1,7 +1,11 @@
-all: fetch pdf clean view
+all: update pdf clean view
+
+update:
+	bibsync -b pihkal.bib -d papers -v -u -r -j -V
 
 fetch:
-	bibsync -b pihkal.bib -d papers -v -s -u -r -j -V -f $(ARXIV)
+	bibsync -b pihkal.bib -d papers -s -j -V -f $(ARXIV)
+	$(MAKE) all
 
 pdf:
 	pdflatex pihkal.tex
