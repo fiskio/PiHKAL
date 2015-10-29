@@ -1,7 +1,7 @@
-all: fetch pdf view
+all: fetch pdf clean view
 
 fetch:
-	bibsync -b neural.bib -d papers -v -s -u -r -j -V -f $(ARXIV)
+	bibsync -b pihkal.bib -d papers -v -s -u -r -j -V -f $(ARXIV)
 
 pdf:
 	pdflatex pihkal.tex
